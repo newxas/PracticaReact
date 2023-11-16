@@ -1,7 +1,7 @@
 import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.css';
 import TodoForm from './components/TodoForm'
 import TodoList from './components/TodoList'
-import Checkbox from './components/Checkbox'
 
 import './App.css'
 
@@ -16,10 +16,14 @@ function App() {
     setTask(values)
   }
 
+  const onDelete=(values)=> {
+    setTask(values);
+  }
+
   return (
     <div className="App">
       <TodoForm addTask={addTask} />
-      <TodoList tasks={task} changeStatus={changeStatus} />
+      <TodoList tasks={task} changeStatus={changeStatus} onDelete={onDelete} />
     </div>
   )
 }

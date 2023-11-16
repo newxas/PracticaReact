@@ -5,14 +5,12 @@ const Checkbox = ({task, onChange}) => {
   //const[stat,SetStat] = useState[''];
 
   const handleClick =(e) => {
-  // SetStat[!stat];
-    console.log(e);
     onChange(e.target.checked, task)
   }
 
   return (
     <input 
-      type="checkbox" 
+      type="checkbox"
       value = { task.status }
       onChange={ handleClick } />
   )

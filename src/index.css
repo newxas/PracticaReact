@@ -1,5 +1,6 @@
 body {
   background-color: #30313d;
+  color: azure;
   margin: 0;
   display: flex;
   place-items: center;
@@ -13,4 +14,3 @@ div.todolist {
   margin-top: 5px;
   display: flex;
 }
-
